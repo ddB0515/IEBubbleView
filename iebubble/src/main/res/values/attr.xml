@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- IEBubbleView -->
+    <declare-styleable name="IEBubbleView">
+        <attr name="ieb_color" format="color"/>
+        <attr name="ieb_position" format="enum">
+            <enum name="top_left" value="0"/>
+            <enum name="top_right" value="1"/>
+            <enum name="bottom_left" value="2"/>
+            <enum name="bottom_right" value="3"/>
+        </attr>
+        <attr name="ieb_orientation" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="ieb_type" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="small" value="1"/>
+        </attr>
+        <attr name="ieb_radius" format="dimension"/>
+        <attr name="ieb_distance" format="dimension"/>
+        <attr name="ieb_marginLeft" format="dimension"/>
+        <attr name="ieb_marginTop" format="dimension"/>
+        <attr name="ieb_marginRight" format="dimension"/>
+        <attr name="ieb_marginBottom" format="dimension"/>
+    </declare-styleable>
+</resources>

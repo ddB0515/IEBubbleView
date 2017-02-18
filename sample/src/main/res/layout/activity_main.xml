@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ie.testbubble.MainActivity"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <com.iebubble.IEBubbleView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/view2"
+        app:ieb_distance="30dp"
+        app:ieb_orientation="left"
+        app:ieb_position="bottom_left"
+        app:ieb_radius="15dp"
+        app:ieb_type="normal"
+        app:ieb_color="@android:color/white"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <com.iebubble.IEBubbleView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/view3"
+        app:ieb_distance="30dp"
+        app:ieb_orientation="right"
+        app:ieb_position="bottom_right"
+        app:ieb_radius="15dp"
+        app:ieb_type="normal"
+        app:ieb_color="@android:color/white"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <com.iebubble.IEBubbleView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/view1"
+        app:ieb_distance="30dp"
+        app:ieb_orientation="right"
+        app:ieb_position="top_right"
+        app:ieb_radius="15dp"
+        app:ieb_type="normal"
+        app:ieb_color="@android:color/white"
+        android:layout_above="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <com.iebubble.IEBubbleView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/view"
+        app:ieb_distance="25dp"
+        app:ieb_orientation="left"
+        app:ieb_position="top_left"
+        app:ieb_radius="15dp"
+        app:ieb_type="normal"
+        app:ieb_color="@android:color/white"
+        android:layout_above="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+</RelativeLayout>
