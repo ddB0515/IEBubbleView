@@ -1,5 +1,5 @@
 # IEBubbleView
-Custom Android Bubbleview with curved Bezier Paths as I didn't find any similar that will fit my need so I have created ones.
+Custom Android Bubbleview with curved Bezier Paths as I didn't find any similar that will fit my need so I have created one.
 Hope Someone will find it useful :)
 
 ##Screenshot
