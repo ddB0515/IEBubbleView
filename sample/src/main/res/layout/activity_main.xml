@@ -29,7 +29,7 @@
         app:ieb_position="bottom_left"
         app:ieb_radius="15dp"
         app:ieb_type="normal"
-        app:ieb_color="@android:color/white"
+        app:ieb_color="?android:attr/textColorLinkInverse"
         android:layout_below="@+id/imageView"
         android:layout_toStartOf="@+id/imageView" />
 
@@ -55,7 +55,7 @@
         app:ieb_position="top_right"
         app:ieb_radius="15dp"
         app:ieb_type="normal"
-        app:ieb_color="@android:color/white"
+        app:ieb_color="@android:color/holo_green_light"
         android:layout_above="@+id/imageView"
         android:layout_toEndOf="@+id/imageView" />
 
@@ -68,7 +68,7 @@
         app:ieb_position="top_left"
         app:ieb_radius="15dp"
         app:ieb_type="normal"
-        app:ieb_color="@android:color/white"
+        app:ieb_color="@android:color/holo_orange_light"
         android:layout_above="@+id/imageView"
         android:layout_toStartOf="@+id/imageView" />
 </RelativeLayout>
