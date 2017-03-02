@@ -18,10 +18,10 @@ public class IEBubbleView extends RelativeLayout {
     private int sizeWidth, sizeHeight;
 
     private float mPadding  = 15;
-    private float mPaddingLeft = 1;
-    private float mPaddingTop = 10;
-    private float mPaddingRight = 1;
-    private float mPaddingBottom = 10;
+    private float mPaddingLeft = 0;
+    private float mPaddingTop = 0;
+    private float mPaddingRight = 0;
+    private float mPaddingBottom = 0;
 
     // points needed to calculate/draw curved arrow
     //      P1 *    * P2
@@ -164,10 +164,10 @@ public class IEBubbleView extends RelativeLayout {
                 p2.y = (int) bubbleRect.top;
                 if (orientation == Orientation.LEFT) {
                     p3.x = (int) (bubbleRect.left + mPoint1Distance - mPoint3Distance / 2);
-                    p3.y = (int) bubbleRect.left + convertDpToPixel(10);
+                    p3.y = (int) bubbleRect.left + convertDpToPixel(mPaddingTop);
                 } else {
                     p3.x = (int) (bubbleRect.left + mPoint1Distance + mPoint3Distance);
-                    p3.y = (int) bubbleRect.left + convertDpToPixel(10);
+                    p3.y = (int) bubbleRect.left + convertDpToPixel(mPaddingTop);
                 }
                 path.reset();
                 if (arrowType == ArrowType.SMALL) {
@@ -207,10 +207,10 @@ public class IEBubbleView extends RelativeLayout {
                 p2.y = (int) bubbleRect.top;
                 if (orientation == Orientation.LEFT) {
                     p3.x = (int) (bubbleRect.right - mPoint1Distance - mPoint3Distance / 2);
-                    p3.y = (int) bubbleRect.left + convertDpToPixel(10);
+                    p3.y = (int) bubbleRect.left + convertDpToPixel(mPaddingTop);
                 } else {
                     p3.x = (int) (bubbleRect.right - mPoint1Distance + mPoint3Distance);
-                    p3.y = (int) bubbleRect.left + convertDpToPixel(10);
+                    p3.y = (int) bubbleRect.left + convertDpToPixel(mPaddingTop);
                 }
                 path.reset();
                 if (arrowType == ArrowType.SMALL) {
@@ -250,10 +250,10 @@ public class IEBubbleView extends RelativeLayout {
                 p2.y = (int) bubbleRect.bottom;
                 if (orientation == Orientation.LEFT) {
                     p3.x = (int) (bubbleRect.left + mPoint1Distance - mPoint3Distance / 2);
-                    p3.y = (int) bottomRight.y  - convertDpToPixel(10);
+                    p3.y = (int) bottomRight.y  - convertDpToPixel(mPaddingBottom);
                 } else {
                     p3.x = (int) (bubbleRect.left + mPoint1Distance + mPoint3Distance);
-                    p3.y = (int) bottomRight.y  - convertDpToPixel(10);
+                    p3.y = (int) bottomRight.y  - convertDpToPixel(mPaddingBottom);
                 }
                 path.reset();
                 if (arrowType == ArrowType.SMALL) {
@@ -293,10 +293,10 @@ public class IEBubbleView extends RelativeLayout {
                 p2.y = (int) bubbleRect.bottom;
                 if (orientation == Orientation.LEFT) {
                     p3.x = (int) (bubbleRect.right - mPoint1Distance - mPoint3Distance / 2);
-                    p3.y = bottomRight.y - convertDpToPixel(10);
+                    p3.y = bottomRight.y - convertDpToPixel(mPaddingBottom);
                 } else {
                     p3.x = (int) (bubbleRect.right - mPoint1Distance + mPoint3Distance);
-                    p3.y = bottomRight.y - convertDpToPixel(10);
+                    p3.y = bottomRight.y - convertDpToPixel(mPaddingBottom);
                 }
                 path.reset();
                 if (arrowType == ArrowType.SMALL) {
