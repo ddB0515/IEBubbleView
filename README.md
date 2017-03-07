@@ -53,6 +53,6 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.InvalidExcepti0n:IEBubbleView:1.0.1'
+    compile 'com.github.InvalidExcepti0n:IEBubbleView:1.0.2'
 }
 ```
